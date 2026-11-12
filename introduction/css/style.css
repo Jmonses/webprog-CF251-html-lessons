@@ -65,3 +65,17 @@ img {
     border: 3px solid #6b7280;
     box-shadow: 0 0 20px rgba(107, 114, 128, 0.4);
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+}
+
+.container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 40px;
+}
