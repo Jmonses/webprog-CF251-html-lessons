@@ -10,56 +10,11 @@ h1 {
     color: #d1d5db;
     text-align: center;
     font-size: 3rem;
-    text-shadow: 0 0 10px rgba(255,255,255,0.1);
-}
-
-h2 {
-    color: #9ca3af;
-}
-
-.profile-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-section {
-    background: #111827;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1 1 300px;
-    max-width: 500px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
-
-table {
-    width: 300px;
-    border-collapse: collapse;
-    margin: auto;
-}
-
-table,
-th,
-td {
-    border: 1px solid #6b7280;
-}
-
-th {
-    background: #374151;
-    color: #f3f4f6;
-}
-
-td {
-    padding: 10px;
-    text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 img {
     display: block;
     margin: 20px auto;
-    width: 300px;
-    border-radius: 15px;
-    border: 3px solid #6b7280;
-    box-shadow: 0 0 20px rgba(107, 114, 128, 0.4);
+    max-width: 100%;
 }
