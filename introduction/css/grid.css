@@ -1,40 +1,37 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 180px 300px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "about      gallery"
+        "education  gallery"
+        "experience gallery"
+        "hobbies    gallery"
+        "songs      gallery";
     gap: 20px;
     padding: 20px;
+    align-items: start;
 }
 
 .container div {
-    background: #f8fafc;
-    color: #111827;
+    background: #111827;
+    color: #e5e7eb;
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 1px solid #1f2937;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.about {
-    grid-column: 1 / 3;
+.container strong {
+    color: #f3f4f6;
 }
 
-.education {
-    grid-column: 3 / 4;
-}
-
-.experience {
-    grid-column: 1 / 2;
-}
-
-.songs {
-    grid-column: 2 / 3;
-}
-
-.gallery {
-    grid-column: 3 / 4;
-    grid-row: 1 / 3;
-}
+.about      { grid-area: about; }
+.education  { grid-area: education; }
+.experience { grid-area: experience; }
+.hobbies    { grid-area: hobbies; }
+.songs      { grid-area: songs; }
+.gallery    { grid-area: gallery; }
 
 .gallery img {
     width: 220px;
@@ -43,8 +40,19 @@
     border-radius: 12px;
     margin-top: 15px;
     border: 3px solid #6b7280;
+    box-shadow: 0 0 20px rgba(107, 114, 128, 0.4);
 }
 
-.hobbies {
-    grid-column: 1 / 3;
+/* Phones / small screens: stack everything in one column */
+@media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "about"
+            "gallery"
+            "education"
+            "experience"
+            "hobbies"
+            "songs";
+    }
 }
