@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/rwd.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Personal Profile Web Page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 
 <h1>Personal Profile Web Page</h1>
 
-<div class="container">
+<div class="container-fluid mt-3">
 
-    <div class="about">
-        <strong>About Me</strong><br>
-        Personal Profile Web Page
+    <div class="row">
+
+        <div class="col-md bg-primary text-white">
+            About Me<br>
+            Personal Profile Web Page
+        </div>
+
+        <div class="col-md bg-dark text-white">
+            Education / Achievements<br>
+            Senior High School Graduate.
+        </div>
+
     </div>
 
-    <div class="education">
-        <strong>Education / Achievements</strong><br>
-        Senior High School Graduate.
-    </div>
+    <br>
 
-    <div class="experience">
-        <strong>IT Experience</strong><br>
-        No IT experience yet, but I have learned Java, CSS, HTML, and Python.
-    </div>
+    <div class="row">
 
-    <div class="hobbies">
-        <strong>Hobbies & Interests</strong><br>
-        Playing games, sleeping, and exploring the world.
-    </div>
+        <div class="col-md bg-primary text-white">
+            IT Experience<br>
+            No IT experience yet, but I have learned Java, CSS, HTML, and Python.
+        </div>
 
-    <div class="songs">
-        <strong>My Favorite Song</strong><br><br>
+        <div class="col-md bg-dark text-white">
+            Hobbies & Interests<br>
+            Playing games, sleeping, and exploring the world.
+        </div>
 
-        Artist: BTS<br>
-        Song: Hooligan<br><br>
+        <div class="col-md bg-primary text-white">
+            My Favorite Song<br>
+            Artist: BTS<br>
+            Song: Hooligan
+        </div>
 
-        Artist: FYA<br>
-        Song: Set Me Free
-    </div>
+        <div class="col-md bg-dark text-white">
+            Artist: FYA<br>
+            Song: Set Me Free
+        </div>
 
-    <div class="gallery">
-        <strong>Picture Gallery</strong><br>
-        <img src="images/Monsi.jfif" alt="Picture">
     </div>
 
 </div>
 
+<br>
+
+<p>
+<strong>Picture Gallery</strong><br>
+<img src="images/Monsi.jfif" alt="Picture" width="300">
+</p>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
